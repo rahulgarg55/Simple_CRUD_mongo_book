@@ -1,0 +1,11 @@
+- project_name/
+  - controllers/
+    - bookController.js
+  - models/
+    - bookModel.js
+  - routes/
+    - bookRoutes.js
+  - index.js
+  - config.js
+  - .env
+  - package.json
