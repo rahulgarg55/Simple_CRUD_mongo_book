@@ -25,6 +25,7 @@ const getBook = async (req, res) => {
 const updateBook = async (req, res) => {
     try {
         const { title, name, author } = req.body;
+        // When new is set to true, Mongoose will return the updated document after applying the changes.
         const updatedBook = await Book.findByIdAndUpdate(req.params.id,{ title, name, author },{ new: true });
         if (!updatedBook) {
             return res.status(404).json({ message: "Book not found" });
